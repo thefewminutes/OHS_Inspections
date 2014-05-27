@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	border-top:#000 solid 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "MS Serif", "New York", serif;
+}
+.panel {
+	margin-top:1em;
+}

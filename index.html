@@ -343,24 +343,751 @@
             <!-- scaffold tab -->
             <div class="tab-pane fade" id="scaffold">
             	<h2>Hanging Bracket Scaffold Working at Heights</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="egress" id="inlineRadio43" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="egress" id="inlineRadio44" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="egress" id="inlineRadio45" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Scaffold has identified access and egress points?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="scaffoldcert" id="inlineRadio46" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="scaffoldcert" id="inlineRadio47" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="scaffoldcert" id="inlineRadio48" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is the scaffold certificate in place and signed off? </strong><br><small>e.g:. Scaff tag</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="midrails" id="inlineRadio49" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="midrails" id="inlineRadio50" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="midrails" id="inlineRadio51" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are the mid rails, top rails and lap boards of the scaffold in place?</strong> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="debris" id="inlineRadio52" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="debris" id="inlineRadio53" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="debris" id="inlineRadio54" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are scaffold decks clear of debris?</strong> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            <h4>Void protection (High Risk)</h4> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="void" id="inlineRadio55" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="void" id="inlineRadio56" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="void" id="inlineRadio57" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is void protection in place with compliance certificate?</strong><br><small>Note: the void protection is to be installed prior to installation of 1st floor flooring</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="whilst" id="inlineRadio58" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="whilst" id="inlineRadio59" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="whilst" id="inlineRadio60" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is the void trap door cover down whilst works occurring on 1st floor?</strong> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            <h4>Roof Guard Rail and Condition &amp; Access (High Risk)</h4> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="tillers" id="inlineRadio61" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="tillers" id="inlineRadio62" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="tillers" id="inlineRadio63" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is there a drop zone area for roof tillers' spoils?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="endanger" id="inlineRadio64" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="endanger" id="inlineRadio65" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="endanger" id="inlineRadio66" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Roof workers have measures in place to not endanger any people below?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing" id="inlineRadio67" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing" id="inlineRadio68" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing" id="inlineRadio69" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Roof guard railing in place for all roof work?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing2" id="inlineRadio70" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing2" id="inlineRadio71" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing2" id="inlineRadio72" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Roof guard rail has identified access points?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing3" id="inlineRadio73" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing3" id="inlineRadio74" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing3" id="inlineRadio75" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>The balcony guard rail is in place for all balcony works?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing4" id="inlineRadio76" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing4" id="inlineRadio77" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing4" id="inlineRadio78" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Do all openings above 2m have guard railing?</strong><br><small>e.g. windows, balcony openings (stair risers have hand rails)</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing5" id="inlineRadio79" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing5" id="inlineRadio80" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing5" id="inlineRadio81" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Does the balcony and alfresco have sufficient structural support?</strong><br><small>eg: structural posts or accrow props for temp support</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="railing6" id="inlineRadio82" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing6" id="inlineRadio83" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="railing6" id="inlineRadio84" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Do all works near an open edge have sufficient guard rail height?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            <h4>Trestles</h4> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="trestles" id="inlineRadio85" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="trestles" id="inlineRadio86" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="trestles" id="inlineRadio87" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>External/internal: are they fully planked, less than 2m in height, have solid stable footings, safe access/egress and a clear fall zone, with correct locking pins?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                            <h4>Ladders (High Risk)</h4> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders" id="inlineRadio88" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders" id="inlineRadio89" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders" id="inlineRadio90" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Extension Ladders in good condition no damaged rungs, no greater than 1:4 vertical ratio?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders2" id="inlineRadio91" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders2" id="inlineRadio92" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders2" id="inlineRadio93" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Ladders secure / tied off / extend 900mm past roof line when accessing heights?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders3" id="inlineRadio94" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders3" id="inlineRadio95" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders3" id="inlineRadio96" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>All types of ladders are minimum Industrial grade rated at a minimum 120kgs?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders4" id="inlineRadio97" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders4" id="inlineRadio98" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders4" id="inlineRadio99" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Step/platform ladder fully open, both stays in good condition and on stable ground?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders5" id="inlineRadio100" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders5" id="inlineRadio101" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="ladders5" id="inlineRadio102" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are trades working off step ladders safely?</strong><br><small>eg: not standing on top step and not over reaching to complete task. (platform ladders recommended)</small>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <p><a id="site_conditions_back" href="#site_conditions" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Site Conditions / Housekeeping</a> <a id="plant_trenches_link" href="#plant_trenches" class="btn btn-default btn-lg" role="button">Items of Plant Trenches (High Risk Works) <span class="glyphicon glyphicon-forward"></span></a></p>
             </div>
             <!-- /scaffold tab -->
             <!-- plant_trenches tab -->
             <div class="tab-pane fade" id="plant_trenches">
             	<h2>Items of Plant Trenches (High Risk Works)</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="planttrenches" id="inlineRadio103" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="planttrenches" id="inlineRadio104" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="planttrenches" id="inlineRadio105" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Do workers who undertake tasks which require a license/certificate of competency have such a license/certificate?</strong><br><small>e.g.: Excavators, skid steer, forklift, crane, boom pumps, spotters, riggers, dogmen</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="pre-start" id="inlineRadio106" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="pre-start" id="inlineRadio107" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="pre-start" id="inlineRadio108" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is there a pre-start checklist completed for the item of mobile plant?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="warning" id="inlineRadio109" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="warning" id="inlineRadio110" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="warning" id="inlineRadio111" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Warning devices operational (reverse beepers, flashing lights, horn)?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="fitforuse" id="inlineRadio112" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fitforuse" id="inlineRadio113" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fitforuse" id="inlineRadio114" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Does the plant look fit for purpose or use?</strong><br><small>e.g.: Earthmover quick hitches secured/pinned</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="screwpile" id="inlineRadio115" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="screwpile" id="inlineRadio116" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="screwpile" id="inlineRadio117" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Open screw pile holes and piers that are left unattended have covers preventing entry and identified on builder's site sign?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="barrier" id="inlineRadio118" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="barrier" id="inlineRadio119" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="barrier" id="inlineRadio120" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Large exposed trenches have fencing/barrier in place, Trenches in minimum excess of 1.5m deep have been battered back and/or shored?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="soilpile" id="inlineRadio121" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="soilpile" id="inlineRadio122" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="soilpile" id="inlineRadio123" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Soil pile located minimum 1m from edge of trench?</strong>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control" id="comments" rows="3"></textarea>
+                    </div>
+				</div>
                 <p><a id="scaffold_back" href="#scaffold" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Hanging Bracket Scaffold Working at Heights</a> <a id="electrical_link" href="#electrical" class="btn btn-default btn-lg" role="button">Electrical Tools and Equipment <span class="glyphicon glyphicon-forward"></span></a></p>
             </div>
             <!-- /plant_trenches tab -->
             <!-- electrical tab -->
             <div class="tab-pane fade" id="electrical">
             	<h2>Electrical Tools and Equipment</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="meterbox" id="inlineRadio124" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="meterbox" id="inlineRadio125" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="meterbox" id="inlineRadio126" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Site Meter Box RCD tested monthly and main fuse locked &amp; door closed?</strong><br><small>Must be tested prior to first use or on installation</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td><input type="date" class="form-control" id="inputDate3"></td>
+                            <td><strong>Site Meter Box RCD test date</strong></td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="rcd" id="inlineRadio127" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="rcd" id="inlineRadio128" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="rcd" id="inlineRadio129" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>If a generator is used, does it have an RCD fitted and not used indoors or in confined space?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads" id="inlineRadio130" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads" id="inlineRadio131" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads" id="inlineRadio132" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Electrical equipment (leads and tools) tested &amp; tagged every 3 months and in date?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads2" id="inlineRadio133" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads2" id="inlineRadio134" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads2" id="inlineRadio135" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are electrical leads exiting through the bottom of the meter box?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads3" id="inlineRadio136" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads3" id="inlineRadio137" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads3" id="inlineRadio138" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are electrical leads raised up where practicable and minimum 15amp leads (1.5mm)?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads4" id="inlineRadio139" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads4" id="inlineRadio140" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads4" id="inlineRadio141" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are leads to be no longer than 25 meters in length and in good working condition?</strong><br><small>i.e.: no exposed wires and not doubled up</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio142" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio143" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio144" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Equipment has required guarding in place (Drop saw/circular saw)?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio142" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio143" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="leads5" id="inlineRadio144" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Drop saw and grinders have blade guard in place and blades in good condition?</strong><br><small>e.g.: no missing teeth or chipped/broken cutting disk</small>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-group">
+                    <label for="comments2">Comments</label>
+                    <textarea class="form-control" id="comments2" rows="3"></textarea>
+                    </div>
+				</div>
                 <p><a id="plant_trenches_back" href="#plant_trenches" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Items of Plant Trenches (High Risk Works)</a> <a id="trades_link" href="#trades" class="btn btn-default btn-lg" role="button">Trades <span class="glyphicon glyphicon-forward"></span></a></p>
             </div>
             <!-- /electrical tab -->
             <!-- trades tab -->
             <div class="tab-pane fade" id="trades">
             	<h2>Trades</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="firstaid" id="inlineRadio145" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="firstaid" id="inlineRadio146" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="firstaid" id="inlineRadio147" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Does the trade have an adequate first aid kit?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="sunsmart" id="inlineRadio148" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="sunsmart" id="inlineRadio149" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="sunsmart" id="inlineRadio150" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are trades working sun smart?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="chemicals" id="inlineRadio151" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="chemicals" id="inlineRadio152" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="chemicals" id="inlineRadio153" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Chemicals used by trades on site are being managed appropriately?</strong><br><small>e.g.: no unlabeled containers, no open containers, PPE in use when using chemicals?</small>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-group">
+                    <label for="comments2">General Comments</label>
+                    <textarea class="form-control" id="comments3" rows="3"></textarea>
+                    </div>
+                    <h3>The following PPE was in use on site and appropriate for the tasks observed:</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> High-visibility vest
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Sun protective clothing
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Eye protection
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        	<div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Hat
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Hard hat
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Hearing protection
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                        	<div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Sunscreen
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Safety boots
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                	<input type="checkbox"> Dust mask
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="bg-danger"><strong>Have you eliminated all potential Risks from any other hazards identified on site that may affect work tasks?</strong> 
+                    <label class="radio-inline">
+                                <input type="radio" name="eliminated" id="inlineRadio154" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="eliminated" id="inlineRadio155" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="eliminated" id="inlineRadio156" value="not applicable"> N/A
+                                </label><br><small>If you answer NO to the item above - you must complete the risk assessment table below &amp; consult with all sub contractors before allowing work to commence</small></p><hr>
+                    <h3>Risk Assessment Table</h3>
+                	<p><strong>Identify below any hazard (Plant or substance or process) that could be a risk to OHS, and list the controls taken. If a hazard is assessed as being high or medium (1-2) this will require operational planning and changes to the SWMS.</strong></p>
+                </div>
                 <p><a id="electrical_back" href="#electrical" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Electrical Tools and Equipment</a> <a href="#" class="btn btn-primary btn-lg" role="button">Submit</a></p>
             </div>
             <!-- /trades tab -->

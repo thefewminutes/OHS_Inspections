@@ -32,36 +32,339 @@
             <li><a href="#electrical" data-toggle="tab">6. Electrical</a></li>
             <li><a href="#trades" data-toggle="tab">7. Trades</a></li>
         </ul>
+        <!-- /Nav tabs -->
         <div class="tab-content">
+        	<!-- general_info tab -->
             <div class="tab-pane fade in active" id="general_info">
             	<h2>General Information</h2>
+                <div class="row">
+                	<div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Date</label>
+                        	<input type="date" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Job Number</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Building Stage</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Supervisor</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                	<div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Construction Manager</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Site Location</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Contractor/Supplier</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                    	<div class="form-group">
+                        	<label for="inputDate">Single/Double/Multi Unit Type</label>
+                        	<input type="text" class="form-control" id="inputDate">
+                        </div>
+                    </div>
+                </div>
                 <p><a id="site_info_link" href="#site_info" class="btn btn-default btn-lg" role="button" data-toggle="tab">Site Information &amp; Procedures <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /general_info tab -->
+            </div>
+            <!-- /general_info tab -->
+            <!-- site_info tab -->
             <div class="tab-pane fade" id="site_info">
             	<h2>Site Information &amp; Procedures</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="site_info" id="inlineRadio1" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_info" id="inlineRadio2" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_info" id="inlineRadio3" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is the correct signage visibly displayed &amp; details completed?</strong><br><small>e.g. Keep out sign, Contractor requirements and Builders Site sign with lot number</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards" id="inlineRadio4" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards" id="inlineRadio5" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards" id="inlineRadio6" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are identified site-specific hazards mentioned on the site sign?</strong><br><small>e.g.: overhead power lines, Gas lines, open trenches etc. (has it been updated?)</small>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards2" id="inlineRadio7" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards2" id="inlineRadio8" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="site_hazards2" id="inlineRadio9" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Has the contractor/supplier completed a pre-start check hazard ID of the site?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="swms" id="inlineRadio10" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="swms" id="inlineRadio11" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="swms" id="inlineRadio12" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Do trades/suppliers on site have a SWMS and is the trade operating in accordance with their SWMS?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="fall" id="inlineRadio13" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fall" id="inlineRadio14" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fall" id="inlineRadio15" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are all works where fall from heights is a risk adequately controlled?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="fallhazards" id="inlineRadio16" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fallhazards" id="inlineRadio17" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="fallhazards" id="inlineRadio18" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are site fall hazards (e.g. retaining walls) controlled and identified on site sign or SWMS?</strong>
+                            </td>
+                        </tr>
+                    </table>
+				</div>
                 <p><a id="general_info_link" href="#general_info" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> General Information</a> <a id="site_conditions_link" href="#site_conditions" class="btn btn-default btn-lg" role="button">Site Conditions / Housekeeping <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /site_info tab -->
+            </div>
+            <!-- /site_info tab -->
+            <!-- site_conditions tab -->
             <div class="tab-pane fade" id="site_conditions">
             	<h2>Site Conditions / Housekeeping</h2>
+                <div class="table-responsive">
+                	<table class="table table-striped table-bordered">
+                    	<tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="crossover" id="inlineRadio19" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="crossover" id="inlineRadio20" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="crossover" id="inlineRadio21" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Cross over appropriately installed and maintained (if required)?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="tradeready" id="inlineRadio22" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="tradeready" id="inlineRadio23" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="tradeready" id="inlineRadio24" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is the site "trade ready?"</strong><br><small>i.e.: has the last trade left completed all houskeeping so the next trade can comence their task?</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="perimeter" id="inlineRadio25" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="perimeter" id="inlineRadio26" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="perimeter" id="inlineRadio27" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Perimeter fencing appropriately installed and maintained?</strong><br><small>No missing panels/gates closed?</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="slab" id="inlineRadio28" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="slab" id="inlineRadio29" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="slab" id="inlineRadio30" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Slab Back fill completed?</strong><br><small>Level ground and stable</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="clearaccess" id="inlineRadio31" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="clearaccess" id="inlineRadio32" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="clearaccess" id="inlineRadio33" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Clear access to front door, toilet, power board &amp bin/cage?</strong><br><small>Is there a 1m clear zone around the build?</small> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="cleaninterior" id="inlineRadio34" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="cleaninterior" id="inlineRadio35" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="cleaninterior" id="inlineRadio36" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Clean interior?</strong> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="materials" id="inlineRadio37" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="materials" id="inlineRadio38" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="materials" id="inlineRadio39" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Are the driveways, footpaths, and nature strips clear of materials?</strong> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="radio-cluster">
+                                <label class="radio-inline">
+                                <input type="radio" name="toilet" id="inlineRadio40" value="yes"> Yes
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="toilet" id="inlineRadio41" value="no"> No
+                                </label>
+                                <label class="radio-inline">
+                                <input type="radio" name="toilet" id="inlineRadio42" value="not applicable"> N/A
+                                </label>
+                            </td>
+                            <td>
+                            <strong>Is the toilet clean, accessible and in correct operating condition with toilet paper?</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td><input type="date" class="form-control" id="inputDate2"></td>
+                            <td><strong>Date of last toilet clean</strong></td>
+                        </tr>
+                    </table>
+                </div>
                 <p><a id="site_info_link_back" href="#site_info" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Site Information &amp; Procedures</a> <a id="scaffold_link" href="#scaffold" class="btn btn-default btn-lg" role="button">Hanging Bracket Scaffold Working at Heights <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /site_conditions tab -->
+            </div>
+            <!-- /site_conditions tab -->
+            <!-- scaffold tab -->
             <div class="tab-pane fade" id="scaffold">
             	<h2>Hanging Bracket Scaffold Working at Heights</h2>
                 <p><a id="site_conditions_back" href="#site_conditions" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Site Conditions / Housekeeping</a> <a id="plant_trenches_link" href="#plant_trenches" class="btn btn-default btn-lg" role="button">Items of Plant Trenches (High Risk Works) <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /scaffold tab -->
+            </div>
+            <!-- /scaffold tab -->
+            <!-- plant_trenches tab -->
             <div class="tab-pane fade" id="plant_trenches">
             	<h2>Items of Plant Trenches (High Risk Works)</h2>
                 <p><a id="scaffold_back" href="#scaffold" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Hanging Bracket Scaffold Working at Heights</a> <a id="electrical_link" href="#electrical" class="btn btn-default btn-lg" role="button">Electrical Tools and Equipment <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /plant_trenches tab -->
+            </div>
+            <!-- /plant_trenches tab -->
+            <!-- electrical tab -->
             <div class="tab-pane fade" id="electrical">
             	<h2>Electrical Tools and Equipment</h2>
                 <p><a id="plant_trenches_back" href="#plant_trenches" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Items of Plant Trenches (High Risk Works)</a> <a id="trades_link" href="#trades" class="btn btn-default btn-lg" role="button">Trades <span class="glyphicon glyphicon-forward"></span></a></p>
-            </div><!-- /electrical tab -->
+            </div>
+            <!-- /electrical tab -->
+            <!-- trades tab -->
             <div class="tab-pane fade" id="trades">
             	<h2>Trades</h2>
                 <p><a id="electrical_back" href="#electrical" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Electrical Tools and Equipment</a> <a href="#" class="btn btn-primary btn-lg" role="button">Submit</a></p>
-            </div><!-- /trades tab -->
-        </div>
+            </div>
+            <!-- /trades tab -->
+        </div><!-- /tab-content -->
         <p class="text-muted">Disclaimer: Donec sodales ac urna a adipiscing. Integer commodo erat est, at malesuada ipsum aliquet ut. Nulla tincidunt nibh justo, sed sodales eros fringilla et. Sed at mi nec quam dapibus molestie. Quisque porta bibendum nulla in elementum. Cras mollis lectus lectus, sit amet volutpat enim placerat quis. Cras in pharetra dolor. Morbi in tristique neque, a bibendum magna. Proin ullamcorper orci orci, et pulvinar metus cursus a. Nam libero massa, cursus ut bibendum sit amet, ornare a ligula. Suspendisse vulputate pretium justo at egestas. Nam id sollicitudin eros, non tincidunt mauris. Nam in laoreet lectus. Nunc lobortis vestibulum mollis.</p>
     </div><!-- /container -->
 

@@ -1075,7 +1075,8 @@
                         </div>
                     </div>
                     <hr>
-                    <p class="bg-danger"><strong>Have you eliminated all potential Risks from any other hazards identified on site that may affect work tasks?</strong> 
+                    <div class="well">
+                    <p><strong>Have you eliminated all potential Risks from any other hazards identified on site that may affect work tasks?</strong> 
                     <label class="radio-inline">
                                 <input type="radio" name="eliminated" id="inlineRadio154" value="yes"> Yes
                                 </label>
@@ -1084,9 +1085,95 @@
                                 </label>
                                 <label class="radio-inline">
                                 <input type="radio" name="eliminated" id="inlineRadio156" value="not applicable"> N/A
-                                </label><br><small>If you answer NO to the item above - you must complete the risk assessment table below &amp; consult with all sub contractors before allowing work to commence</small></p><hr>
+                                </label><br><small>If you answer NO to the item above - you must complete the risk assessment table below &amp; consult with all sub contractors before allowing work to commence</small></p></div><hr>
                     <h3>Risk Assessment Table</h3>
                 	<p><strong>Identify below any hazard (Plant or substance or process) that could be a risk to OHS, and list the controls taken. If a hazard is assessed as being high or medium (1-2) this will require operational planning and changes to the SWMS.</strong></p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Hazard Identified</th>
+                                    <th>Risk (1-3)</th>
+                                    <th>Controls Implemented</th>
+                                    <th>By Whom</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><textarea class="form-control" id="hazard1" rows="2"></textarea></td>
+                                    <td>
+                                    	<select class="form-control">
+                                            <option>-select-</option>
+                                            <option class="bg-danger">1</option>
+                                            <option class="bg-warning">2</option>
+                                            <option class="bg-success">3</option>
+                                        </select>
+                                    </td>
+                                    <td><textarea class="form-control" id="controls1" rows="2"></textarea></td>
+                                    <td><input type="text" class="form-control" id="whom1"></td>
+                                </tr>
+                                <tr>
+                                    <td><textarea class="form-control" id="hazard2" rows="2"></textarea></td>
+                                    <td>
+                                    	<select class="form-control">
+                                            <option>-select-</option>
+                                            <option class="bg-danger">1</option>
+                                            <option class="bg-warning">2</option>
+                                            <option class="bg-success">3</option>
+                                        </select>
+                                    </td>
+                                    <td><textarea class="form-control" id="controls2" rows="2"></textarea></td>
+                                    <td><input type="text" class="form-control" id="whom2"></td>
+                                </tr>
+                                <tr>
+                                    <td><textarea class="form-control" id="hazard3" rows="2"></textarea></td>
+                                    <td>
+                                    	<select class="form-control">
+                                            <option>-select-</option>
+                                            <option class="bg-danger">1</option>
+                                            <option class="bg-warning">2</option>
+                                            <option class="bg-success">3</option>
+                                        </select>
+                                    </td>
+                                    <td><textarea class="form-control" id="controls3" rows="2"></textarea></td>
+                                    <td><input type="text" class="form-control" id="whom3"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                        	<thead>
+                            	<tr>
+                                	<th rowspan="2">Consequence</th>
+                                    <th colspan="3">Likelihood/Probability</th>
+                                </tr>
+                                <tr>
+                                	<th>Likely</th>
+                                    <th>Moderate</th>
+                                    <th>Unlikely</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>High (1)</td>
+                                    <td class="bg-danger">High (1)</td>
+                                    <td class="bg-warning">Medium (2)</td>
+                                    <td class="bg-warning">Medium (2)</td>
+                                </tr>
+                                <tr>
+                                	<td>Medium (2)</td>
+                                    <td class="bg-danger">High (1)</td>
+                                    <td class="bg-warning">Medium (2)</td>
+                                    <td class="bg-success">Low (3)</td>
+                                </tr>
+                                <tr>
+                                	<td>Low (3)</td>
+                                    <td class="bg-warning">Medium (2)</td>
+                                    <td class="bg-success">Low (3)</td>
+                                    <td class="bg-success">Low (3)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <p><a id="electrical_back" href="#electrical" class="btn btn-default btn-lg" role="button"><span class="glyphicon glyphicon-backward"></span> Electrical Tools and Equipment</a> <a href="#" class="btn btn-primary btn-lg" role="button">Submit</a></p>
             </div>
